@@ -9,7 +9,7 @@ soup = BS(res.text, "html.parser")
 
 arr = soup.select("div.name")
 for a in arr:
-    print(a.get_text(strip=True))
+    print(a.get_text(strip=True)) 
 
 # arr = [a.get_text(strip=True) for a in soup.select("div.name")]
 # print(arr)
